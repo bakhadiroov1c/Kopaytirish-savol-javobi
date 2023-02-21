@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bu saytimiz orqali kopaytirish jadvalini yanada o'rganib olasiz">
+    <meta name="keywords" content="HTML, CSS, JavaScript, ">
+    <meta name="author" content="Abdusamad">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ko'paytirish jadvali</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 p-0">
+                <div class="card pt-3 text-center rounded-0 text-bg-success mb-3">
+                    <div class="card-header title font-monospace">
+                        <h2>Ko'paytirish jadvali</h2>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn firstBtn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Boshlash</button>
+                        <p class="card-text AboutText mt-3">Boshlash tugmasini bosing hamda kerakli vaqtni tanlab quyidagi misolarni yechin. Omad!</p>
+                        <h3 class="time mt-3">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row justify-content-around">
+                    <button class="btn btn-success btnTrue col-2">0</button>
+                    <button class="btn btn-danger btnFalse col-2">0</button>
+                </div>
+            </div>
+            <div class="col-10 col-lg-4 text-center">
+                <button class="btn questionBtn col-8 btn-primary">7 * 8 = ?</button>
+                <input type="number" id="number" value="56" disabled class="form-control mt-4 form-control-lg border-3" placeholder="Javob kiriting">
+                <button class="btn d-none resetBtn btn-outline-success mt-3 d-block mx-auto">Qaytadan boshlash</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">O'zingizni tanishtiring</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ismizni kiriting</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ismingizni kiriting">
+                    </div>
+                    <div class="mb-3">
+                        <label for="second" class="form-label">Necha sekund bajarmoqchisiz?</label>
+                        <input type="number" class="form-control" id="second" placeholder="Necha sekund ?">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Orqaga</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn startBtn btn-primary">Boshlash</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
