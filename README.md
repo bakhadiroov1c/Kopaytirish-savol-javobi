@@ -1,0 +1,1 @@
+# Kopaytirish-savol-javobi
